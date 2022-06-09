@@ -16,7 +16,9 @@ class Student:
        year_of_birth=2022-self.age
        return f"Hello your year of birth is {year_of_birth}"
 
-
     def your_initials(self):
         return f"Hello your initial is {self.firstname[0]}{self.lastname[0]}"
+    
+                          
+       
     
