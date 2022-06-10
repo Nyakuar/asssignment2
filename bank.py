@@ -17,7 +17,7 @@ class Account:
         else:
             self.balance+=amount
             self.deposits.append(amount) 
-            
+              
             return f" you have deposited {amount}. your new balance is {self.balance}",self.deposits
     def  withdraw(self,amount) :
         # self.balance-=amount 
@@ -30,10 +30,23 @@ class Account:
             self.withdrawal.append(amount) 
             return f"you have withdrawn {amount} your balance is {self.balance}",self.withdrawal
         
-    def deposit_statement(self):
-        print(*self.deposits,sep="\n")
+    # def deposit_statement(self):
+    #     print(*self.deposits,sep="\n")
             
-    def withdraw_statement(self):
-        print(*self.deposits,self="\m")
+    # def withdraw_statement(self):
+    #     print(*self.deposits,self="\m")
+        
+    
+    def deposit_Statement(self):
+        for Statements in self.deposits:
+            print(Statements)
+
+    def withdraw_Statement(self):
+        for statements in self.withdraw:
+            print(statements)
+
+    def current_balance(self):
+        balance=self.balance
+        print(balance)        
         
         
